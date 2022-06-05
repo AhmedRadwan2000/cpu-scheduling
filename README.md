@@ -3,7 +3,7 @@
 The inputs are given in a text file for each class, where each class represents one algorithm.
 
 ## In case of ( FCFS ) class :
-The first line of the txt file must be the number of processes.
+The first line of the txt file must be the number of processes.\
 The remaining lines are the processes data ( arrival time + burst time ). \
 e.g :\
 4 ---> the number of processes.\
@@ -14,7 +14,7 @@ e.g :\
 
 
 ## In case of ( RR ) class :
-The first line of the txt file must be the number of processes.
+The first line of the txt file must be the number of processes.\
 The second line the time quantum
 The remaining lines are the processes data ( arrival time + burst time ). \
 e.g :\
@@ -27,12 +27,12 @@ e.g :\
 
 
 ## In case of ( SJF ) class :
-The first line of the txt file must be the number of processes.
+The first line of the txt file must be the number of processes.\
 The remaining lines are the processes data ( arrival time + burst time ) same as FCFS.
 
 
 ## In case of ( Priority ) class :
-The first line of the txt file must be the number of processes.
+The first line of the txt file must be the number of processes.\
 The remaining lines are the processes data ( arrival time + burst time + priority ). \
 e.g :\
 4 ---> the number of processes.\
