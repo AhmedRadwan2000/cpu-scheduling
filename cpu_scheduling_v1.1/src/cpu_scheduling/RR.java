@@ -41,6 +41,7 @@ public class RR {
             burstTimes[i] = Integer.parseInt(split[1]);
             trackingBurstTimes[i] = burstTimes[i];
         }
+        sorting(arrivalTimes, burstTimes);
         calcWaitingAndTurnAroundTimesForEachProcess();
     }
 
@@ -112,5 +113,22 @@ public class RR {
         }
         System.out.print("Average waiting time is: ");
         System.out.println(sum / n);
+    }
+    
+    private void sorting(int[] arr, int[] arr2) {
+        for (int i = 0; i < arr.length; i++) {
+            int index = i;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] < arr[index]) {
+                    index = j;
+                }
+            }
+            int temp = arr[i];
+            arr[i] = arr[index];
+            arr[index] = temp;
+            temp = arr2[i];
+            arr2[i] = arr2[index];
+            arr2[index] = temp;
+        }
     }
 }
